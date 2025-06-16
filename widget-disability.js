@@ -23,7 +23,7 @@ var pageHeight_website = Math.max(body_website.scrollHeight, body_website.offset
 
 var bg_color_icon = "";
 
-var conditional = ["ppid-vnew.animemusic.us"];
+var conditional = ["google.com"];
 if (conditional.includes(base_url_website)) {
     bg_color_icon = "#d0021b";
 } else {
@@ -1815,7 +1815,7 @@ create_div_element.setAttribute("id", "new_load_disabilitas");
 document.body.appendChild(create_div_element);
 
 
-if (base_url_website == "ppid.slemankab.go.id") {
+if (base_url_website == "ppid.banjarmasinkota.go.id") {
     var main_class_wrap = document.getElementById("wrapper");
     main_class_wrap.classList.add("main_web_ppid_jogja");
 }
@@ -2500,7 +2500,7 @@ function load_html_dsb() {
 
 }
 var my_website_jkt = "";
-var except_url = ["www.jakarta.go.id", "jakarta.go.id", "ppid.jakarta.go.id"];
+var except_url = ["www.banjarmasinkota.go.id", "banjarmasinkota.go.id", "ppid.banjarmasinkota.go.id"];
 if ((new RegExp('\\b' + except_url.join('\\b|\\b') + '\\b')).test(base_url_website)) {
     my_website_jkt = "Mode Suara";
 } else {
@@ -2508,7 +2508,7 @@ if ((new RegExp('\\b' + except_url.join('\\b|\\b') + '\\b')).test(base_url_websi
 }
 
 var filter_hight_jquery_v3 = "";
-var except_url_jquery_v3 = ["ppid-vnew.animemusic.us"];
+var except_url_jquery_v3 = ["google.com"];
 var name_class_widget = "";
 var name_class_widget1 = "";
 var name_class_widget2 = "";
