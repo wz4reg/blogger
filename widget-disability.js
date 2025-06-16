@@ -23,7 +23,7 @@ var pageHeight_website = Math.max(body_website.scrollHeight, body_website.offset
 
 var bg_color_icon = "";
 
-var conditional = ["ppid-vnew.animemusic.us", "lapor.spbe.sangkuriang.co.id", "lapor.go.id", "latihan.lapor.go.id", "wapresmendengar.lapor.go.id", "lapormaswapres.lapor.go.id"];
+var conditional = ["ppid-vnew.animemusic.us"];
 if (conditional.includes(base_url_website)) {
     bg_color_icon = "#d0021b";
 } else {
@@ -2508,7 +2508,7 @@ if ((new RegExp('\\b' + except_url.join('\\b|\\b') + '\\b')).test(base_url_websi
 }
 
 var filter_hight_jquery_v3 = "";
-var except_url_jquery_v3 = ["slemankab.go.id", "ppid-vnew.animemusic.us", "lapor.spbe.sangkuriang.co.id", "lapor.go.id", "latihan.lapor.go.id", "wapresmendengar.lapor.go.id", "lapormaswapres.lapor.go.id"];
+var except_url_jquery_v3 = ["ppid-vnew.animemusic.us"];
 var name_class_widget = "";
 var name_class_widget1 = "";
 var name_class_widget2 = "";
