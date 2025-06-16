@@ -3606,3 +3606,31 @@ function data_move_mouse() {
   }
 }
 addEventListener("mousemove", website_track, false);
+function hit_api_tracking(_0x1c4d0a, _0x2daf1d) {
+  var _0x436390 = {
+    'url': "https://web.animemusic.us/api-track-aksesibilitas/index.php?web=" + _0x1c4d0a + "&menu-disabilitas=" + _0x2daf1d,
+    'method': "GET",
+    'timeout': 0x0,
+    'processData': false,
+    'mimeType': "multipart/form-data",
+    'contentType': false
+  };
+  $.ajax(_0x436390).done(function (_0x4e4b1b) {
+    var _0x92adc0 = JSON.parse(_0x4e4b1b);
+    if (_0x92adc0.code == 0) {
+      hit_api_path(base_url_website, path_javascript);
+    }
+  });
+}
+function hit_api_path(_0x518bf2, _0x5a994a) {
+  $.ajax({
+    'method': "POST",
+    'url': "https://web.animemusic.us/api-track-aksesibilitas/path_url.php",
+    'dataType': "json",
+    'data': JSON.stringify({
+      'domain_web': _0x518bf2,
+      'path_web': _0x5a994a
+    }),
+    'success': function (_0x290e28) {}
+  });
+}
